@@ -59,7 +59,7 @@ export function SimpleRegistrationForm() {
             Your Name
           </Typography>
           <Input
-            isRequired
+         
             placeholder="Enter your name"
             type="text"
             name="name"
@@ -76,7 +76,7 @@ export function SimpleRegistrationForm() {
           </Typography>
           <Input
             size="lg"
-            isRequired
+            
             placeholder="name@email.com"
             type="email"
             name="email"
@@ -93,7 +93,7 @@ export function SimpleRegistrationForm() {
           <div className="">
             <Textarea
               label="Enter your Message"
-              isRequired
+            
               type="text"
               name="message"
               value={formData.message}

@@ -13,13 +13,13 @@ import {
 } from "@nextui-org/navbar";
 import { Button } from "@nextui-org/button";
 
-import { Link } from "@nextui-org/link";
+// import { Link } from "@nextui-org/link";
 import { Input } from "@nextui-org/input";
 
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
-import NextLink from "next/link";
+import Link  from "next/link";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/navbar/theme-switch";
@@ -98,21 +98,21 @@ export const BlurNav = () => {
       // style={{
       //   backgroundColor,
       //   color: textColor,
-      //   transition: "background-color color 8s ease-in-out", 
+      //   transition: "background-color color 8s ease-in-out",
       //   // Smooth transition over 1 second
       // }}
     >
       <NavbarBrand as="li" className="gap-3 max-w-fit">
-        <NextLink className="flex justify-start items-center gap-1" href="/">
+        <Link className="flex justify-start items-center gap-1" href="/">
           <Logo />
           <p className="font-bold text-inherit">Siddhartha Singh</p>
-        </NextLink>
+        </Link>
       </NavbarBrand>
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <ul className="hidden lg:flex gap-8 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <NextLink
+              <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium font-semibold"
@@ -122,7 +122,7 @@ export const BlurNav = () => {
                 target={item.target ? "_blank" : undefined}
               >
                 {item.label}
-              </NextLink>
+              </Link>
             </NavbarItem>
           ))}
         </ul>
@@ -135,16 +135,24 @@ export const BlurNav = () => {
         {/* <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem> */}
         <NavbarItem className="hidden sm:flex gap-2">
           <Link
-            isExternal
+            target="_blank"
             href={siteConfig.links.instagram}
             aria-label="Instagram"
           >
             <InstaIcon className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.twitter} aria-label="Twitter">
+          <Link
+            target="_blank"
+            href={siteConfig.links.twitter}
+            aria-label="Twitter"
+          >
             <TwitterIcon className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.github} aria-label="Github">
+          <Link
+            target="_blank"
+            href={siteConfig.links.github}
+            aria-label="Github"
+          >
             <GithubIcon className="text-default-500" />
           </Link>
           <ThemeSwitch />
@@ -152,7 +160,7 @@ export const BlurNav = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github} aria-label="Github">
+        <Link href={siteConfig.links.github} aria-label="Github">
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
@@ -173,7 +181,6 @@ export const BlurNav = () => {
                     : "foreground"
                 }
                 href={item.href}
-                size="lg"
               >
                 {item.label}
               </Link>

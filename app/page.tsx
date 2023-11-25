@@ -7,6 +7,9 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
+import { Button } from "@nextui-org/react";
+import QuickProjects from "@/components/QuickProjects";
+
 
 export default function Page() {
   return (
@@ -41,6 +44,11 @@ export default function Page() {
                 love to collaborate on projects.
               </span>
             </span>
+            <Link href="/about" className="text-2xl">
+              <Button className="text-white bg-purple-500 border-0 py-2 px-4  rounded text-lg mt-10 sm:mt-0">
+                Read More
+              </Button>
+            </Link>
           </div>
 
           <div>
@@ -56,10 +64,19 @@ export default function Page() {
       </>
       {/* intro content */}
 
+      {/* quick projects list */}
+      <>
+        <div className="">
+          <h1 className="text-3xl text-center my-10">QUICK PROJECTS</h1>
+          <QuickProjects />
+        </div>
+      </>
+      {/* quick projects list */}
+
       {/* connect with me */}
       <>
         <div className="flex justify-center items-center mx-auto">
-          <div className="text-center mb-10">
+          <div className="text-center my-10 mt-20">
             <h1 className="text-3xl">CONNECT WITH ME</h1>
             <p className="text-purple-900 dark:text-purple-200">
               Feel free to connect with me on
