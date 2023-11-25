@@ -78,7 +78,7 @@ const AllProjects = () => {
       {/* Projects */}
       <div className="max-w-[90vw] mx-auto my-10">
         <div className="text-2xl text-center my-10">ALL OF MY PROJECTS</div>
-        <div className="gap-4 grid grid-cols-2 sm:grid-cols-4 h-max">
+        <div className="gap-4 grid grid-cols-1 sm:grid-cols-4 h-max">
           {list.map((item, index) => (
             <Card className="w-full flex justify-between  max-w-[40rem] shadow-lg" key={index}>
               <CardHeader floated={false} color="blue-gray">

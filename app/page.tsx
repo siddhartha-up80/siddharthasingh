@@ -19,8 +19,8 @@ export default function Page() {
 
       {/* intro content */}
       <>
-        <div className="flex justify-between items-center h-[90vh] flex-wrap md:flex-row max-w-[80vw] mx-auto">
-          <div className="w-[45vw] flex flex-col gap-10 py-10 flex-wrap">
+        <div className="flex justify-between items-center min-h-[90vh]  flex-col md:flex-row md:max-w-[80vw] mx-auto">
+          <div className="min-w-[45vw] flex flex-col gap-10 p-10 flex-wrap">
             <span className="text-2xl leading-relaxed">
               A full-stack web developer, with a strong inclination towards
               challenging projects, designing and developing web applications.
@@ -47,7 +47,7 @@ export default function Page() {
             <Image
               src="/images/welcome.jpeg"
               alt="siddhartha"
-              className="w-[25vw] object-cover rounded-lg"
+              className="md:max-w-[30vw] p-10  object-cover rounded-lg"
               height={500}
               width={500}
             />

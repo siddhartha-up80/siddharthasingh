@@ -11,7 +11,7 @@ import {
 
 export function ActivitiesTimeline() {
   return (
-    <div className="w-[50vw] my-10 mx-auto">
+    <div className="md:w-[50vw] my-10 mx-auto p-5">
       <span className="text-2xl text-center flex justify-center items-center my-10">
         MY EDUCATION
       </span>

@@ -8,8 +8,8 @@ const About = () => {
     <>
       {/* intro content */}
       <>
-        <div className="flex justify-between items-center flex-wrap md:flex-row max-w-[80vw] mx-auto">
-          <div className="w-[45vw] flex flex-col gap-10 py-10 flex-wrap">
+        <div className="flex justify-between items-center flex-col-reverse md:flex-row md:max-w-[80vw] mx-auto p-10">
+          <div className="md:w-[45vw] flex flex-col gap-10 py-10 ">
             <span className="text-2xl leading-relaxed">
               I am a final-year student at Vellore Institute of Technology,
               Bhopal, pursuing a B.Tech degree in Electronics and Communication
@@ -36,7 +36,7 @@ const About = () => {
             <Image
               src="/images/siddhartha.png"
               alt="siddhartha"
-              className="w-[25vw] object-cover rounded-lg"
+              className="md:w-[25vw] object-cover rounded-lg p-"
               height={500}
               width={500}
             />

@@ -42,23 +42,24 @@ const ColorIntro = () => {
 
   return (
     <div
-      className="h-[88vh] flex justify-center items-center -mt-16"
+      className="md:h-[88vh] h-[50vh] flex justify-center items-center -mt-16"
       style={{
         backgroundColor,
         transition: "background-color 5s ease-in-out", // Smooth transition over 1 second
       }}
     >
       <span
-        className="w-[48vw] text-4xl leading-relaxed flex font-semibold"
+        className="md:w-[48vw] md:text-4xl text-3xl leading-relaxed flex font-semibold pl-5 pr-1"
         style={{
           color: textColor,
           transition: "color 8s ease-in-out", // Smooth transition over 1 seconds",
         }}
       >
-        Siddhartha Singh, Next.js Maestro, Full-Stack Sorcerer, and Innovation
-        Alchemist
+        <span className="leading-relaxed">
+          Siddhartha Singh, Next.js Maestro, Full-Stack Sorcerer, and Innovation
+          Alchemist
+        </span>
       </span>
-      
     </div>
   );
 };
