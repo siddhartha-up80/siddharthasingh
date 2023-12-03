@@ -15,9 +15,15 @@ export default function Page() {
   return (
     <>
       {/* color changing intro */}
-      <>
+      <div
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/images/background.jpg')",
+            
+        }}
+      >
         <ColorIntro />
-      </>
+      </div>
       {/* color changing intro */}
 
       {/* intro content */}

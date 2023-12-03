@@ -41,26 +41,27 @@ const ColorIntro = () => {
   };
 
   return (
-    <div
-      className="md:h-[88vh] h-[50vh] flex justify-center items-center -mt-16"
-      style={{
-        backgroundColor,
-        transition: "background-color 5s ease-in-out", // Smooth transition over 1 second
-      }}
-    >
+    <>
+      <div
+        className="md:h-[88vh] h-[50vh] flex justify-center items-center -mt-16 opacity-40"
+        style={{
+          backgroundColor,
+          transition: "background-color 5s ease-in-out", // Smooth transition over 1 second
+        }}
+      ></div>
       <span
-        className="md:w-[48vw] md:text-4xl text-3xl leading-relaxed flex font-semibold pl-5 pr-1"
+        className="md:w-[48vw] md:text-4xl text-3xl leading-relaxed flex font-semibold pl-5 pr-1 absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 top-36 left-3 right-3"
         style={{
           color: textColor,
           transition: "color 8s ease-in-out", // Smooth transition over 1 seconds",
         }}
       >
-        <span className="leading-relaxed">
-          Siddhartha Singh, Next.js Maestro, Full-Stack Sorcerer, and Innovation
-          Alchemist
+        <span className="leading-relaxed !opacity-100">
+          Siddhartha Singh, Next.js Enthusiast, Full-Stack Apprentice, and
+          Innovation Sorcerer
         </span>
       </span>
-    </div>
+    </>
   );
 };
 

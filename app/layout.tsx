@@ -20,7 +20,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body className={inter.className}>
+      <body
+        className={inter.className}
+      >
         <Providers>
           <BlurNav />
           <div className="min-h-[78vh]">{children}</div>
