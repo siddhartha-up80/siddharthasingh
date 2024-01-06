@@ -19,7 +19,8 @@ export default function Page() {
         style={{
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/images/background.jpg')",
-            
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
         }}
       >
         <ColorIntro />

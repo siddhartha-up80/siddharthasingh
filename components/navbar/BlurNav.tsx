@@ -19,7 +19,7 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 
 import { siteConfig } from "@/config/site";
-import Link  from "next/link";
+import Link from "next/link";
 import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/navbar/theme-switch";
@@ -32,6 +32,7 @@ import {
 } from "@/components/navbar/icons";
 
 import { Logo } from "@/components/navbar/icons";
+import Image from "next/image";
 
 export const BlurNav = () => {
 
@@ -95,16 +96,17 @@ export const BlurNav = () => {
       maxWidth="xl"
       position="sticky"
       className="shadow-sm"
-      // style={{
-      //   backgroundColor,
-      //   color: textColor,
-      //   transition: "background-color color 8s ease-in-out",
-      //   // Smooth transition over 1 second
-      // }}
+    // style={{
+    //   backgroundColor,
+    //   color: textColor,
+    //   transition: "background-color color 8s ease-in-out",
+    //   // Smooth transition over 1 second
+    // }}
     >
       <NavbarBrand as="li" className="gap-3 max-w-fit">
-        <Link className="flex justify-start items-center gap-1" href="/">
-          <Logo />
+        <Link className="flex justify-start items-center" href="/">
+          <span className="border-2 border-solid border-black rounded-full flex justify-center items-center mr-2 "><Logo/></span>
+          
           <p className="font-bold text-inherit">Siddhartha Singh</p>
         </Link>
       </NavbarBrand>
@@ -177,8 +179,8 @@ export const BlurNav = () => {
                   index === 2
                     ? "foreground"
                     : index === siteConfig.navMenuItems.length - 1
-                    ? "foreground"
-                    : "foreground"
+                      ? "foreground"
+                      : "foreground"
                 }
                 href={item.href}
               >
