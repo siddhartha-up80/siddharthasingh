@@ -20,9 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body
-        className={inter.className}
-      >
+      <meta
+        name="google-site-verification"
+        content="wuKkVFD1dhs31EjQNk81yBbw-temshhMPPc8JGAUC94"
+      />
+      <body className={inter.className}>
         <Providers>
           <BlurNav />
           <div className="min-h-[78vh]">{children}</div>
