@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import {
@@ -10,116 +10,115 @@ import {
   Button,
 } from "@nextui-org/react";
 import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function QuickProjects() {
   return (
-    <div className="md:max-w-[75vw] gap-4 grid grid-cols-12 grid-rows-2 px-8 mx-auto">
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start bg-purple-900/80 text-white">
-          <p className="text-tiny font-bold">Next.js 13.4 App Router</p>
-          <h4 className=" font-medium text-large">BLISSINATOR</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover object-left"
-          src="/images/blissinator.png"
-        />
-        <CardFooter className="absolute bg-purple bottom-0 z-10 justify-between">
-          <Link target="_blank" href="https://blissinator.vercel.app/">
-            <Button className="text-tiny bg-purple-900 text-white" size="sm">
-              View Live
-            </Button>
-          </Link>
-        </CardFooter>
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start bg-purple-900/80 text-white">
-          <p className="text-tiny   font-bold">Next.js 13 Pages Directory</p>
-          <h4 className=" font-medium text-large">SWARNALEHENGA</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover object-left"
-          src="/images/swarnalehenga.png"
-        />
-        <CardFooter className="absolute  bottom-0 z-10 justify-between">
-          <Link target="_blank" href="https://swarnalehenga.vercel.app/">
-            <Button className="text-tiny bg-purple-900 text-white" size="sm">
-              View Live
-            </Button>
-          </Link>
-        </CardFooter>
-      </Card>
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start bg-purple-900/80 text-white">
-          <p className="text-tiny   font-bold">React 18</p>
-          <h4 className=" font-medium text-large">PLAGIARISMINATOR</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover object-left"
-          src="/images/plagiarisminator.png"
-        />
-        <CardFooter className="absolute  bottom-0 z-10 justify-between">
-          <Link target="_blank" href="https://plagiarisminator.vercel.app/">
-            <Button className="text-tiny bg-purple-900 text-white" size="sm">
-              View Live
-            </Button>
-          </Link>
-        </CardFooter>
-      </Card>
-      <Card className="w-full h-[300px] col-span-12 sm:col-span-5">
-        <CardHeader className="absolute z-10 top-1 flex-col items-start bg-purple-900/80 text-white">
-          <p className="text-tiny   font-bold">Next.js 13.4 App Router</p>
-          <h4 className="text-black font-medium text-2xl">CHATAGRAM</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card example background"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover object-left"
-          src="/images/chatagram.png"
-        />
-        <CardFooter className="absolute  bottom-0 z-10 justify-between">
-          <Link target="_blank" href="https://chatagraminator.vercel.app">
-            <Button className="text-tiny bg-purple-900 text-white" size="sm">
-              View Live
-            </Button>
-          </Link>
-        </CardFooter>
-      </Card>
-      <Card
-        isFooterBlurred
-        className="w-full h-[300px] col-span-12 sm:col-span-7"
-      >
-        <CardHeader className="absolute z-10 top-1 flex-col items-start bg-purple-900/80 text-white">
-          <p className="text-tiny   font-bold">Next.js 14 App Router</p>
-          <h4 className="/90 font-medium text-xl">
-            SIDDHARTHA SINGH PORTFOLIO
-          </h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover object-left"
-          src="/images/portfolio.png"
-        />
-        <CardFooter className="absolute  bottom-0 z-10">
-          <div className="flex flex-grow gap-2 items-center">
-            <div className="flex flex-col">
-              <p className="text-tiny ">You are at home page</p>
-              <p className="text-tiny ">View all of my projects now</p>
+    <div className="md:max-w-[85vw] md:px-8 px-2 mx-auto">
+      <div className="container mx-auto space-y-12">
+        <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
+          <CardBody className="flex md:flex-row flex-col md:px-12 py-12">
+            <Image
+              height={600}
+              width={600}
+              src="/images/inatorsui.png"
+              alt=""
+              className="h-full object-top object-cover rounded-md"
+            />
+            <div className="flex flex-col justify-center flex-1 p-6">
+              <span className="text-xs uppercase">Next.js 14</span>
+              <h3 className="text-3xl font-bold">Inators UI</h3>
+              <p className="my-6">
+                Inators UI is a frontend components library for developers and
+                designers to make creating nextjs client side as well as server
+                side interfaces easier. Based on Tailwind and Shadcn/ui for just
+                copy and use, with more than 150+ components to choose from.
+              </p>
+              <Link
+                href="https://inatorsui.vercel.app"
+                target="_blank"
+                className="text-sm w-max"
+              >
+                <Button className="self-start text-white bg-black border-0 py-4 px-10 font-semibold rounded text-lg">
+                  View Now
+                </Button>
+              </Link>
             </div>
-          </div>
-          <Link href="/projects">
-            <Button className="bg-purple-900 text-white" size="sm">
-              View All Projects
-            </Button>
-          </Link>
-        </CardFooter>
-      </Card>
+          </CardBody>
+        </Card>
+
+        <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
+          <CardBody className="flex md:flex-row-reverse flex-col-reverse md:px-12 py-12">
+            <Image
+              height={600}
+              width={600}
+              src="/images/chatagram.png"
+              alt=""
+              className="h-full object-top object-cover rounded-md"
+            />
+            <div className="flex flex-col justify-center flex-1 p-6">
+              <span className="text-xs uppercase">Next.js 13.4</span>
+              <h3 className="text-3xl font-bold">Chatagraminator</h3>
+              <p className="my-6">
+                A Multiuser Next.js 13.4 app-directory based application,
+                incorporating the Open-AI API to create and share posts within a
+                community feed. With a secure Google authentication using Next
+                Auth, providing multiple login options.
+              </p>
+              <Link
+                href="https://chatagraminator.vercel.app"
+                target="_blank"
+                className="text-sm w-max"
+              >
+                <Button className="self-start text-white bg-black border-0 py-4 px-10 font-semibold rounded text-lg">
+                  View Now
+                </Button>
+              </Link>
+            </div>
+          </CardBody>
+        </Card>
+
+        <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
+          <CardBody className="flex md:flex-row flex-col md:px-12 py-12">
+            <Image
+              height={600}
+              width={600}
+              src="/images/swarnalehenga.png"
+              alt=""
+              className="h-full object-top object-cover rounded-md"
+            />
+            <div className="flex flex-col justify-center flex-1 p-6">
+              <span className="text-xs uppercase">Next.js 13.1</span>
+              <h3 className="text-3xl font-bold">Swarna-Lehenga</h3>
+              <p className="my-6">
+                A feature-rich e-commerce website using
+                Next.js 13.1, featuring functionalities like Add to Cart,
+                Filtering, and Content Management System. With next.js
+                server-side rendering from Next.js 13.1 pages directory,
+                ensuring an optimal user experience and strong SEO performance.
+              </p>
+              <Link
+                href="https://swarnalehenga.vercel.app"
+                target="_blank"
+                className="text-sm w-max"
+              >
+                <Button className="self-start text-white bg-black border-0 py-4 px-10 font-semibold rounded text-lg">
+                  View Now
+                </Button>
+              </Link>
+            </div>
+          </CardBody>
+        </Card>
+      </div>
+
+      <div className="flex justify-end mt-6  text-sm">
+        <Link href={"/projects"}>
+          <Button className="text-white bg-black border-0 py-2 px-4 font-semibold rounded  md:mt-10 sm:mt-0">
+            View All Projects
+            <FaArrowRight />
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 }

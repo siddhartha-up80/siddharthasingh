@@ -102,7 +102,7 @@ export function SimpleRegistrationForm() {
           </div>
         </div>
 
-        <Button type="submit" className="mt-6 bg-purple-900" fullWidth>
+        <Button type="submit" className="mt-6 bg-black text-white dark:bg-white dark:text-black" fullWidth>
           Send Now
         </Button>
       </form>

@@ -78,8 +78,9 @@ const TechStack = () => {
               key={index}
               isPressable
               onPress={() => console.log("item pressed")}
+              className="hover:shadow-lg hover:shadow-purple-600"
             >
-              <CardBody className="overflow-visible p-0">
+              <CardBody className="overflow-visible p-0 ">
                 <span className="w-full object-cover h-[140px] flex justify-center items-center">
                   <item.img size={80} /> {/* Render the icon dynamically */}
                 </span>

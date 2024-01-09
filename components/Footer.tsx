@@ -10,17 +10,14 @@ import { FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <footer className="text-white body-font bg-purple-900 dark:bg-black mt-10">
-        <div className="container px-5 py-3 mx-auto flex items-center justify-between sm:flex-row flex-col">
+      <footer className="text-white body-font bg-black">
+        <div className=" px-3 pr-5 py-3 mx-auto flex items-center justify-between sm:flex-row flex-col">
           <Link
             href="/"
             className="flex title-font font-medium items-center md:justify-start justify-center"
           >
-            <span className="">Fully Made by Siddhartha Singh</span>
+            <span className="text-sm">Made by Siddhartha Singh using Next.js App Router</span>
           </Link>
-          <span className="flex title-font font-medium">
-            Made by using Next.js 14 App Router
-          </span>
           <span className="inline-flex  sm:mt-0 mt-4 justify-center sm:justify-start">
             <ul className="flex justify-center items-center flex-row flex-wrap gap-4">
               <li className="social-icons">

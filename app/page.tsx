@@ -19,8 +19,8 @@ export default function Page() {
         style={{
           backgroundImage:
             "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/images/background.jpg')",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         <ColorIntro />
@@ -52,7 +52,7 @@ export default function Page() {
               </span>
             </span>
             <Link href="/about" className="text-2xl">
-              <Button className="text-white bg-purple-500 border-0 py-2 px-4  rounded text-lg mt-10 sm:mt-0">
+              <Button className="text-white bg-black border-0 py-2 px-8  rounded text-lg md:mt-10 sm:mt-0">
                 Read More
               </Button>
             </Link>
@@ -78,62 +78,78 @@ export default function Page() {
           <QuickProjects />
         </div>
       </>
-      {/* quick projects list */}
 
-      {/* connect with me */}
       <>
-        <div className="flex justify-center items-center mx-auto">
-          <div className="text-center my-10 mt-20">
-            <h1 className="text-3xl">CONNECT WITH ME</h1>
-            <p className="text-purple-900 dark:text-purple-200">
-              Feel free to connect with me on
-            </p>
-            <ul className="flex justify-center items-center flex-row flex-wrap gap-4 mt-2">
-              <li className="social-icons">
-                <Link
-                  href="https://github.com/siddhartha-up80"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour text-3xl"
-                >
-                  <AiFillGithub />
-                </Link>
-              </li>
-              <li className="social-icons">
-                <Link
-                  href="https://twitter.com/siddhartha_up80"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour text-3xl"
-                >
-                  <AiOutlineTwitter />
-                </Link>
-              </li>
-              <li className="social-icons">
-                <Link
-                  href="https://www.linkedin.com/in/siddhartha-singh-work"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour text-3xl"
-                >
-                  <FaLinkedinIn />
-                </Link>
-              </li>
-              <li className="social-icons">
-                <Link
-                  href="https://www.instagram.com/sid_up80"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colou text-3xl"
-                >
-                  <AiFillInstagram />
-                </Link>
-              </li>
-            </ul>
+        <div>
+          <div
+            className="w-full bg-gray-600 shadow-md mt-20 h-[50vh]"
+            style={{
+              backgroundImage:
+                'url("https://source.unsplash.com/random/640x480?web")',
+              backgroundPosition: "center center",
+              backgroundBlendMode: "multiply",
+              backgroundSize: "cover",
+            }}
+          >
+            {/* connect with me */}
+            <>
+              <div className="flex justify-center flex-col h-full items-center mx-auto text-white">
+                <div className="text-center my-10 mt-20 leading-loose">
+                  <h1 className="text-3xl">CONNECT WITH ME</h1>
+                  <p className=" dark:text-purple-200">
+                    Feel free to connect with me on
+                  </p>
+                  <ul className="flex justify-center items-center flex-row flex-wrap gap-4 mt-2">
+                    <li className="social-icons">
+                      <Link
+                        href="https://github.com/siddhartha-up80"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-colour text-3xl"
+                      >
+                        <AiFillGithub />
+                      </Link>
+                    </li>
+                    <li className="social-icons">
+                      <Link
+                        href="https://twitter.com/siddhartha_up80"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-colour text-3xl"
+                      >
+                        <AiOutlineTwitter />
+                      </Link>
+                    </li>
+                    <li className="social-icons">
+                      <Link
+                        href="https://www.linkedin.com/in/siddhartha-singh-work"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-colour text-3xl"
+                      >
+                        <FaLinkedinIn />
+                      </Link>
+                    </li>
+                    <li className="social-icons">
+                      <Link
+                        href="https://www.instagram.com/sid_up80"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-colou text-3xl"
+                      >
+                        <AiFillInstagram />
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </>
+            {/* connect with me */}
           </div>
         </div>
       </>
-      {/* connect with me */}
+
+      {/* quick projects list */}
     </>
   );
 }
