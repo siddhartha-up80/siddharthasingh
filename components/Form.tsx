@@ -47,7 +47,7 @@ export function SimpleRegistrationForm() {
   return (
     <Card color="transparent" shadow={false} className="md:max-w-[40vw]">
       <Typography variant="h4" color="blue-gray">
-        Contact Us
+        Contact Me
       </Typography>
       <Typography color="gray" className="mt-1 font-normal">
         How may I help You ? I can help design a website, a new product, improve

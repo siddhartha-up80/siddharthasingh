@@ -17,7 +17,7 @@ export default function QuickProjects() {
     <div className="md:max-w-[85vw] md:px-8 px-2 mx-auto">
       <div className="container mx-auto space-y-12">
         <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
-          <CardBody className="flex md:flex-row flex-col md:px-12 py-12">
+          <CardBody className="flex md:flex-row flex-col md:px-12 py-12 px-4">
             <Image
               height={600}
               width={600}
@@ -48,7 +48,7 @@ export default function QuickProjects() {
         </Card>
 
         <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
-          <CardBody className="flex md:flex-row-reverse flex-col-reverse md:px-12 py-12">
+          <CardBody className="flex md:flex-row-reverse flex-col-reverse md:px-12 py-12 px-4">
             <Image
               height={600}
               width={600}
@@ -79,7 +79,7 @@ export default function QuickProjects() {
         </Card>
 
         <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
-          <CardBody className="flex md:flex-row flex-col md:px-12 py-12">
+          <CardBody className="flex md:flex-row flex-col md:px-12 py-12 px-4">
             <Image
               height={600}
               width={600}
@@ -91,11 +91,11 @@ export default function QuickProjects() {
               <span className="text-xs uppercase">Next.js 13.1</span>
               <h3 className="text-3xl font-bold">Swarna-Lehenga</h3>
               <p className="my-6">
-                A feature-rich e-commerce website using
-                Next.js 13.1, featuring functionalities like Add to Cart,
-                Filtering, and Content Management System. With next.js
-                server-side rendering from Next.js 13.1 pages directory,
-                ensuring an optimal user experience and strong SEO performance.
+                A feature-rich e-commerce website using Next.js 13.1, featuring
+                functionalities like Add to Cart, Filtering, and Content
+                Management System. With next.js server-side rendering from
+                Next.js 13.1 pages directory, ensuring an optimal user
+                experience and strong SEO performance.
               </p>
               <Link
                 href="https://swarnalehenga.vercel.app"

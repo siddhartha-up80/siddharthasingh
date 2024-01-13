@@ -19,7 +19,7 @@ const AllProjects = () => {
      img: "https://source.unsplash.com/random/800x500/?reactjs",
      description:
        "UI components library based on shadcn-ui and tailwind for developers and designers to make creating nextjs client side as well as server side interfaces easier.",
-     link: "https://chatagraminator.vercel.app/",
+     link: "https://inatorsui.vercel.app/",
    },{
      title: "Chatagraminator",
      img: "/images/chatagram.png",
