@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const ColorIntro = () => {
@@ -50,16 +51,28 @@ const ColorIntro = () => {
         }}
       ></div>
       <span
-        className="md:w-[48vw] md:text-4xl text-3xl leading-relaxed flex font-semibold pl-5 pr-1 absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 top-48 left-3 right-3"
+        className="md:w-[48vw] md:text-4xl text-3xl leading-relaxed flex font-semibold pl-5 pr-1 absolute md:top-1/2 md:left-1/3 md:-translate-x-1/2 md:-translate-y-1/2 top-32  left-3 right-3"
         style={{
           color: textColor,
           transition: "color 8s ease-in-out", // Smooth transition over 1 seconds",
         }}
       >
-        <span className="leading-relaxed !opacity-100">
-          Siddhartha Singh, Next.js Enthusiast, Full-Stack Apprentice, and
-          Innovation Sorcerer
-        </span>
+        <div className="flex min-w-[80vw] items-center justify-between flex-col md:flex-row">
+          <span className="leading-relaxed !opacity-100 max-w-[40rem]">
+            Siddhartha Singh, Next.js Enthusiast, Full-Stack Apprentice, and
+            Innovation Sorcerer
+          </span>
+
+          <span className="!opacity-100">
+            <Image
+              height={500}
+              width={500}
+              src={"/images/introimage.svg"}
+              alt=""
+              className="w-full"
+            />
+          </span>
+        </div>
       </span>
     </>
   );
