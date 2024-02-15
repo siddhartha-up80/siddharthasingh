@@ -10,7 +10,6 @@ import Link from "next/link";
 import { Button } from "@nextui-org/react";
 import QuickProjects from "@/components/QuickProjects";
 
-
 export default function Page() {
   return (
     <>
@@ -57,7 +56,6 @@ export default function Page() {
               </Button>
             </Link>
           </div>
-
           <div>
             <Image
               src="/images/welcome.jpeg"
@@ -76,76 +74,6 @@ export default function Page() {
         <div className="">
           <h1 className="text-3xl text-center my-10">QUICK PROJECTS</h1>
           <QuickProjects />
-        </div>
-      </>
-
-      <>
-        <div>
-          <div
-            className="w-full bg-gray-600 shadow-md mt-20 h-[50vh]"
-            style={{
-              backgroundImage:
-                'url("https://source.unsplash.com/random/640x480?web")',
-              backgroundPosition: "center center",
-              backgroundBlendMode: "multiply",
-              backgroundSize: "cover",
-            }}
-          >
-            {/* connect with me */}
-            <>
-              <div className="flex justify-center flex-col h-full items-center mx-auto text-white">
-                <div className="text-center my-10 mt-20 leading-loose">
-                  <h1 className="text-3xl">CONNECT WITH ME</h1>
-                  <p className=" dark:text-purple-200">
-                    Feel free to connect with me on
-                  </p>
-                  <ul className="flex justify-center items-center flex-row flex-wrap gap-4 mt-2">
-                    <li className="social-icons">
-                      <Link
-                        href="https://github.com/siddhartha-up80"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour text-3xl"
-                      >
-                        <AiFillGithub />
-                      </Link>
-                    </li>
-                    <li className="social-icons">
-                      <Link
-                        href="https://twitter.com/siddhartha_up80"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour text-3xl"
-                      >
-                        <AiOutlineTwitter />
-                      </Link>
-                    </li>
-                    <li className="social-icons">
-                      <Link
-                        href="https://www.linkedin.com/in/siddhartha-singh-work"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colour text-3xl"
-                      >
-                        <FaLinkedinIn />
-                      </Link>
-                    </li>
-                    <li className="social-icons">
-                      <Link
-                        href="https://www.instagram.com/sid_up80"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="icon-colou text-3xl"
-                      >
-                        <AiFillInstagram />
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </>
-            {/* connect with me */}
-          </div>
         </div>
       </>
 

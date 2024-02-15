@@ -19,7 +19,10 @@ export function ActivitiesTimeline() {
         <TimelineItem className="h-28">
           <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
-            <TimelineIcon className="p-3 w-36 text-center" variant="ghost">
+            <TimelineIcon
+              className="p-3 w-36 text-center rounded-lg"
+              variant="ghost"
+            >
               {/* <BellIcon className="h-5 w-5" /> */}
               Graduation
             </TimelineIcon>
@@ -37,7 +40,7 @@ export function ActivitiesTimeline() {
           <TimelineConnector className="!w-[78px]" />
           <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
             <TimelineIcon
-              className="p-3 w-36 text-center"
+              className="p-3 w-36 text-center  rounded-lg"
               variant="ghost"
               color="red"
             >
@@ -57,7 +60,7 @@ export function ActivitiesTimeline() {
         <TimelineItem className="h-28">
           <TimelineHeader className="relative rounded-xl border border-blue-gray-50 bg-white py-3 pl-4 pr-8 shadow-lg shadow-blue-gray-900/5">
             <TimelineIcon
-              className="p-3 w-36 text-center"
+              className="p-3 w-36 text-center  rounded-lg "
               variant="ghost"
               color="green"
             >
