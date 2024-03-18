@@ -4,12 +4,36 @@ const list = [
     type: "Full Stack",
     tech: "Next.js 14, React, Tailwind, Shadcn UI",
     slug: "inators-ui",
-    img: "https://source.unsplash.com/random/800x500/?reactjs",
+    img: "/images/inatorsui.png",
     description:
       "UI components library based on shadcn-ui and tailwind for developers and designers to make creating nextjs client side as well as server side interfaces easier.",
     details:
       "Inators UI is a comprehensive UI components library designed to streamline the process of creating interfaces using Next.js. Built upon shadcn-ui and Tailwind CSS, it offers a rich collection of components for both client-side and server-side rendering, catering to the needs of developers and designers alike. By leveraging the power of Next.js, it facilitates the seamless integration of these components into projects, enhancing efficiency and productivity. With its user-friendly interface and versatile features, Inators UI empowers teams to build dynamic and visually appealing web applications with ease.",
     link: "https://inatorsui.vercel.app/",
+  },
+  {
+    title: "Optiflowinator",
+    type: "Full Stack",
+    tech: "Next.js 14, React, Tailwind, Shadcn UI, OpenAI API, MongoDB",
+    slug: "optiflowinator",
+    img: "/images/optiflowinator.png",
+    description:
+      "An innovative code optimizing and posts sharing platform powered by OpenAI. Unleashing the possibilities of Next.js 14 App Router",
+    details:
+      "A Multi-User Next.js 14 app-router based application named OPTIFLOW-INATOR. The application seamlessly incorporates the OpenAI API to enhance user interactions through the creation and sharing of code posts within a dynamic community feed, users can utilize ai based code explainer, optimizer and language converter for upto 5 programming languages.",
+    link: "https://chatagraminator.vercel.app/",
+  },
+  {
+    title: "Ethnicinator",
+    type: "Full Stack",
+    tech: "Next.js 13.1, React, Tailwind, DaisyUI, MongoDB",
+    slug: "ethnicinator",
+    img: "/images/ethnicinator.png",
+    description:
+      "An Indian Ethnic wear E-commerce web-app crafted with the brilliance of Next.js 13 Pages Directory.",
+    details:
+      "Delve into the vibrant world of Indian Ethnic wear with our meticulously crafted E-commerce web-app. Powered by the sophistication of Next.js 13 Pages Directory, this platform offers a seamless browsing and shopping experience. Explore a diverse range of traditional and contemporary attire, meticulously curated to reflect the rich cultural tapestry of India. With intuitive navigation and immersive visuals, our web-app brings the essence of Indian fashion to your fingertips. Discover timeless elegance and modern sophistication as you browse through our collections, designed to cater to every taste and occasion.",
+    link: "https://swarnalehenga.vercel.app/",
   },
   {
     title: "Chatagraminator",

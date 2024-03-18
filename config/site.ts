@@ -19,7 +19,7 @@ export const siteConfig = {
     },
     {
       label: "Resume",
-      href: "/resume.pdf",
+      href: "https://drive.google.com/file/d/1o120BxSp6esypJp8SvdpDE-F-8HYTzEO/view",
       target: "_blank",
     },
     {
@@ -43,7 +43,7 @@ export const siteConfig = {
     },
     {
       label: "Resume",
-      href: "/resume",
+      href: "https://drive.google.com/file/d/1o120BxSp6esypJp8SvdpDE-F-8HYTzEO/view",
     },
     {
       label: "Contact",

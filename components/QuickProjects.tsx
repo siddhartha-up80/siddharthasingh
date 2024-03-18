@@ -14,7 +14,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function QuickProjects() {
   return (
-    <div className="md:max-w-[85vw] md:px-8 px-2 mx-auto">
+    <div className="md:max-w-[85vw] md:px-8 px-2 mx-auto" >
       <div className="container mx-auto space-y-12">
         <Card className="flex flex-col overflow-hidden rounded-md lg:flex-row hover:shadow-xl hover:shadow-purple-600">
           <CardBody className="flex md:flex-row flex-col md:px-12 py-12 px-4">
@@ -23,7 +23,7 @@ export default function QuickProjects() {
               width={600}
               src="/images/inatorsui.png"
               alt=""
-              className="h-full object-top object-cover rounded-md"
+              className="h-full object-top object-fill aspect-video rounded-md"
             />
             <div className="flex flex-col justify-center flex-1 p-6">
               <span className="text-xs uppercase">Next.js 14</span>
@@ -52,21 +52,22 @@ export default function QuickProjects() {
             <Image
               height={600}
               width={600}
-              src="/images/chatagram.png"
+              src="/images/optiflowinator.png"
               alt=""
-              className="h-full object-top object-cover rounded-md"
+              className="h-full object-top object-fill rounded-md aspect-video"
             />
             <div className="flex flex-col justify-center flex-1 p-6">
-              <span className="text-xs uppercase">Next.js 13.4</span>
-              <h3 className="text-3xl font-bold">Chatagraminator</h3>
+              <span className="text-xs uppercase">Next.js 14</span>
+              <h3 className="text-3xl font-bold">Optiflow Inator</h3>
               <p className="my-6">
-                A Multiuser Next.js 13.4 app-directory based application,
-                incorporating the Open-AI API to create and share posts within a
-                community feed. With a secure Google authentication using Next
-                Auth, providing multiple login options.
+                Optiflowinator is a Multiuser Next.js 14 app-directory based
+                application, incorporating the Open-AI API to create, optimize
+                and share code posts within a community feed. With a secure
+                Google authentication using Next Auth, providing multiple login
+                options.
               </p>
               <Link
-                href="https://chatagraminator.vercel.app"
+                href="https://optiflowinator.vercel.app"
                 target="_blank"
                 className="text-sm w-max"
               >
@@ -83,22 +84,23 @@ export default function QuickProjects() {
             <Image
               height={600}
               width={600}
-              src="/images/swarnalehenga.png"
+              src="/images/ethnicinator.png"
               alt=""
-              className="h-full object-top object-cover rounded-md"
+              className="h-full object-top object-fill rounded-md aspect-video"
             />
             <div className="flex flex-col justify-center flex-1 p-6">
-              <span className="text-xs uppercase">Next.js 13.1</span>
-              <h3 className="text-3xl font-bold">Swarna-Lehenga</h3>
+              <span className="text-xs uppercase">Next.js 14</span>
+              <h3 className="text-3xl font-bold">Ethnic Inator</h3>
               <p className="my-6">
-                A feature-rich e-commerce website using Next.js 13.1, featuring
-                functionalities like Add to Cart, Filtering, and Content
-                Management System. With next.js server-side rendering from
-                Next.js 13.1 pages directory, ensuring an optimal user
-                experience and strong SEO performance.
+                A feature-rich indian ethnic wear e-commerce website using
+                Next.js 14, featuring functionalities like Add to Cart,
+                Filtering, and Content Management System and payment system
+                using stripe. With next.js server-side components from Next.js
+                14 app router, ensuring an optimal user experience and strong
+                SEO performance.
               </p>
               <Link
-                href="https://swarnalehenga.vercel.app"
+                href="https://ethnicinator.vercel.app"
                 target="_blank"
                 className="text-sm w-max"
               >

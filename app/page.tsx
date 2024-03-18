@@ -17,7 +17,7 @@ export default function Page() {
       <div
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/images/background.jpg')",
+            "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/images/backgrond.jpg')",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
@@ -43,9 +43,8 @@ export default function Page() {
               <span className="text-purple-900 dark:text-purple-200">
                 final-year student at Vellore Institute of Technology, Bhopal
               </span>
-              , pursuing a B.Tech degree in Electronics and Communication
-              Engineering. I am always open to opportunities in which I can
-              harness my skills and would{" "}
+              , pursuing Bachelor of Technology in ECE. I am always open to
+              opportunities in which I can harness my skills and would{" "}
               <span className="text-purple-900 dark:text-purple-200">
                 love to collaborate on projects.
               </span>
@@ -71,7 +70,7 @@ export default function Page() {
 
       {/* quick projects list */}
       <>
-        <div className="">
+        <div id="projects">
           <h1 className="text-3xl text-center my-10">QUICK PROJECTS</h1>
           <QuickProjects />
         </div>

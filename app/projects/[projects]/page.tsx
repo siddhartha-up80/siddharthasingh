@@ -22,7 +22,7 @@ const Page = ({ params, searchParams }: any) => {
                 height={900}
                 width={900}
                 alt="ecommerce"
-                className="md:min-w-[40vw] md:max-w-[50vw] object-cover object-top rounded aspect-video"
+                className="md:min-w-[40vw] md:max-w-[50vw] object-fill object-top rounded aspect-video"
                 src={
                   info?.img ||
                   "https://source.unsplash.com/random/800x500/?project"
