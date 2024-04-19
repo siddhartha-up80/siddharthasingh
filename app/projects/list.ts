@@ -12,6 +12,19 @@ const list = [
     link: "https://inatorsui.vercel.app/",
   },
   {
+    title: "NextInator",
+    type: "Full Stack",
+    tech: "Next.js 14, React, Tailwind, Shadcn UI, OpenAI API, Pinecone, MongoDB",
+    slug: "nextinator",
+    img: "/images/nextinator.png",
+    description:
+      "A custom data-based AI chat web-app built on Next.js 14, with OpenAI API integration, " +
+      "for content creators, marketers, students, and anyone who wants to get personalized responses from AI chatbots.",
+    details:
+      "Next Inator is a web app built in Next.js 14, it is an open-ai based custom data based AI chat web-app, powered by open-ai api and pinecone vector database. Users can add their own data, and chat with the data, to get personalized responses. It is a great tool for content creators, marketers, students, and anyone who wants to get personalized responses from ai chatbots.",
+    link: "https://nextinator.vercel.app/",
+  },
+  {
     title: "Optiflowinator",
     type: "Full Stack",
     tech: "Next.js 14, React, Tailwind, Shadcn UI, OpenAI API, MongoDB",
@@ -21,7 +34,7 @@ const list = [
       "An innovative code optimizing and posts sharing platform powered by OpenAI. Unleashing the possibilities of Next.js 14 App Router",
     details:
       "A Multi-User Next.js 14 app-router based application named OPTIFLOW-INATOR. The application seamlessly incorporates the OpenAI API to enhance user interactions through the creation and sharing of code posts within a dynamic community feed, users can utilize ai based code explainer, optimizer and language converter for upto 5 programming languages.",
-    link: "https://chatagraminator.vercel.app/",
+    link: "https://optiflowinator.vercel.app/",
   },
   {
     title: "Ethnicinator",
